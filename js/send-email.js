@@ -1,14 +1,15 @@
-// Inicializa EmailJS con tu Public Key
+// js/send-email.js
+
+// Inicializa EmailJS solo una vez
 emailjs.init("G87dya8-7z_muWn_c");
 
 document.querySelector("form").addEventListener("submit", function (e) {
     e.preventDefault();
 
     emailjs.sendForm(
-        "default_service",        // ID del servicio
-        "template_4fzxkog",       // ID de la plantilla
-        this,                     // Referencia al formulario
-        "G87dya8-7z_muWn_c"       // Tu clave pública (también puede ir aquí)
+        "default_service",     // ID del servicio
+        "template_4fzxkog",    // ID de la plantilla
+        this                   // Referencia al formulario
     )
         .then(function () {
             alert("✅ Tu mensaje ha sido enviado correctamente.");
