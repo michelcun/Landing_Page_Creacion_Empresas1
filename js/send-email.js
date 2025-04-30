@@ -1,17 +1,20 @@
-// Inicializa EmailJS con tu Public Key
-emailjs.init("G87dya8-7z_muWn_c");
-
 document.querySelector("form").addEventListener("submit", function (e) {
     e.preventDefault();
 
+    const honeypot = document.getElementById("empresa").value;
+    if (honeypot !== "") {
+        console.warn("Bot detectado. Envío cancelado.");
+        return; // No envía nada si el honeypot está lleno
+    }
+
     emailjs.sendForm(
-        "service_g0uo7j4",         // Nuevo Service ID
-        "template_4fzxkog",        // Tu ID de plantilla
-        this,                      // El formulario
-           )
+        "service_g0uo7j4",
+        "template_4fzxkog",
+        this
+    )
         .then(function () {
             alert("✅ Tu mensaje ha sido enviado correctamente.");
-            document.querySelector("form").reset(); //Limpia el formulario
+            e.target.reset(); // Limpia el formulario después del envío
         }, function (error) {
             alert("❌ Ocurrió un error al enviar el mensaje.");
             console.error("Error:", error);
