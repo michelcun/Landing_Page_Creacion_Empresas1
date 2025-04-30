@@ -81,4 +81,22 @@ h1, h2, h3, .hero h1 {
     color: #fff;
     box-shadow: 0 0 0 4px rgba(255, 122, 0, 0.2);
 }
+/* Navbar base (debe tener esta clase en el HTML) */
+.navbar-scroll-hide {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    transition: opacity 0.5s ease-in-out;
+}
 
+.navbar-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.navbar-visible {
+    opacity: 1;
+    pointer-events: auto;
+}
