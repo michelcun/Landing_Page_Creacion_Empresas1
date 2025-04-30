@@ -47,6 +47,7 @@ h1, h2, h3, .hero h1 {
     z-index: 2;
 }
 
+
 .logo-grande {
     width: 25vw;
     max-width: 250px;  /* límite máximo opcional */
