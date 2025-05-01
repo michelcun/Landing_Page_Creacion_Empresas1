@@ -4,7 +4,7 @@ body {
 }
 
 /* Títulos más llamativos */
-h1, h2, h3, .hero h1 {
+h1, h2, h3, h5, .hero h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
@@ -100,4 +100,64 @@ h1, h2, h3, .hero h1 {
 .navbar-visible {
     opacity: 1;
     pointer-events: auto;
+}
+
+.problema-overlay {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.problema-overlay img {
+    transition: transform 0.3s ease;
+}
+
+.problema-overlay:hover img {
+    transform: scale(1.1);
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    width: 100%;
+    padding: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.problema-overlay:hover .overlay-text {
+    opacity: 1;
+}
+
+.paso-overlay {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid #d6d6d6
+;
+}
+
+.paso-overlay img {
+    transition: transform 0.3s ease;
+}
+
+.paso-overlay:hover img {
+    transform: scale(1.1);
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    width: 100%;
+    padding: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.paso-overlay:hover .overlay-text {
+    opacity: 1;
 }
