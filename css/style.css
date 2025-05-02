@@ -181,3 +181,29 @@ h1, h2, h3, h5, h6, .hero h1 {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
+
+.testimonial-carousel {
+    position: relative;
+    height: 50px;
+    font-style: italic;
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.testimonial {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    width: 100%;
+
+}
+.testimonial p{
+    font-weight: bold;
+}
+.testimonial.active {
+    opacity: 1;
+}
+
+.form-style label{ color: white; }

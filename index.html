@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Google Fonts -->
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
 
@@ -22,8 +21,8 @@
 <!-- Hero Section -->
 <section class="hero">
     <div>
-        <h1 class="display-5 fw-bold">Tax Senior: "Declara sin estrés, sin complicaciones"</h1>
-        <p class="lead">La primera plataforma de declaración de impuestos asistida por IA, diseñada especialmente para adultos mayores que quieren hacerlo fácil y bien.</p>
+        <h1 class="display-5 fw-bold"><strong style="color: #f97316;">Tax Senior</strong> "Declara sin estrés y sin complicaciones"</h1><br>
+        <p class="lead">La primera plataforma inteligente diseñada para adultos mayores que desean declarar impuestos de forma sencilla, segura y sin complicaciones. <br> Asistida por inteligencia artificial, pensada para ti.</p>
         <a href="#formulario" class="btn btn-outline-orange btn-lg mt-3">Conócela ahora</a>
     </div>
 </section>
@@ -102,8 +101,23 @@
 <section class="bg-white py-5">
     <div class="container">
         <h2 class="text-center mb-4 fw-bold">¿Por qué elegirnos?</h2>
-        <p class="text-center mb-5 fst-italic" style="font-weight: bold">“Una solución hecha para quienes no crecieron con la tecnología, pero la necesitan hoy.”</p>
+        <!--<p class="text-center mb-5 fst-italic" style="font-weight: bold">“Una solución hecha para quienes no crecieron con la tecnología, pero la necesitan hoy.”</p> -->
+        <div class="testimonial-carousel">
+            <div class="testimonial active">
+                <p>"La plataforma fue fácil de usar. Me sentí acompañado en todo el proceso."</p>
+                <span class="author">- María López, 65 años</span>
+            </div>
 
+            <div class="testimonial">
+                <p>"Antes no sabía cómo declarar, ahora lo hago sin ayuda de mis hijos."</p>
+                <span class="author">- Luis Rodríguez, 70 años</span>
+            </div>
+
+            <div class="testimonial">
+                <p>"Me encanta que me hablen y me guíen, no me pierdo nunca."</p>
+                <span class="author">- Carmen Díaz, 61 años</span>
+            </div>
+        </div>
         <div class="row text-center justify-content-center gap-3">
             <!-- Asistente de voz -->
             <div class="col-md-3 card p-4 rounded-4">
@@ -131,11 +145,11 @@
 
 
 <!-- Formulario -->
-<section class="bg-light py-5" id="formulario">
+<section class="bg-light py-5 paso-section form-style" id="formulario">
     <div class="container">
         <h2 class="text-center mb-4">¿Te interesa conocer más?</h2>
         <form name="contact"  class="mx-auto" style="max-width: 500px;">
-            <div class="mb-3">
+            <div class="mb-3 ">
                 <label for="nombre" class="form-label">Nombre completo</label>
                 <input
                         type="text"
@@ -209,6 +223,6 @@
 <!-- Scripts personalizados -->
 <script src="js/hide-logo-on-scroll.js"></script>
 <script src="js/send-email.js"></script>
-
+<script src="js/testimonial.js"></script>
 </body>
 </html>
