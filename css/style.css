@@ -1,10 +1,12 @@
 /* Tipografía general */
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
+
+
 /* Títulos más llamativos */
-h1, h2, h3, h5, .hero h1 {
+h1, h2, h3, h5, h6, .hero h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
@@ -106,6 +108,7 @@ h1, h2, h3, h5, .hero h1 {
     position: relative;
     overflow: hidden;
     border-radius: 12px;
+    border: 1px solid #d6d6d6
 }
 
 .problema-overlay img {
@@ -131,12 +134,20 @@ h1, h2, h3, h5, .hero h1 {
     opacity: 1;
 }
 
+.paso-section{
+    background: #001b30 !important;
+}
+
+.paso-section h2{
+    color: white !important;
+}
+
 .paso-overlay {
     position: relative;
     overflow: hidden;
     border-radius: 12px;
-    border: 1px solid #d6d6d6
-;
+    border: 1px solid #d6d6d6;
+
 }
 
 .paso-overlay img {
@@ -160,4 +171,13 @@ h1, h2, h3, h5, .hero h1 {
 
 .paso-overlay:hover .overlay-text {
     opacity: 1;
+}
+.card{
+    background-color: #f8f9fa;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
